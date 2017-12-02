@@ -1,8 +1,18 @@
 package com.ipiecoles.java.javaeval.model;
 
 import org.joda.time.LocalDate;
+import java.util.List;
 
 public final class Entreprise {
+
+	private String nom;
+	private List<Employe> employes;
+
+	public Entreprise(String nom, List<Employe> employes) {
+		this.nom = nom;
+		this.employes = employes;
+	}
+
 	public static final Double SALAIRE_BASE = 1480.27;
 	public static final Integer NB_CONGES_BASE = 25;
 	public static final Integer NB_RTT_BASE = 12;

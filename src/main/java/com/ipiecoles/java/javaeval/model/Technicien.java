@@ -8,7 +8,7 @@ import javax.persistence.ManyToOne;
 import java.util.Objects;
 
 @Entity
-public class Technicien extends Employe implements Comparable<Technicien> {
+public class Technicien extends Employe implements Comparable<Technicien>{
 
 
 	@ManyToOne
